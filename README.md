@@ -16,7 +16,7 @@
 * 需要包含若干节点的K8s集群，其中必须有一个Master节点和若干Slave节点，Master节点必须加上'mysql=master'标签，Slave节点必须加上'mysql-slave'标签
 * mysql镜像，可以使用docker hub上的官方mysql镜像，或者使用percona-mysql镜像，percona-mysql提供了mysql商业版才有的一些功能
 * percona-xtrabackup镜像，percona-xtraback是一个用于mysql备份的工具，版本必须与mysql版本对齐，否则备份过程中可能会出现问题
-* k8s集成上创建data的命名空间，或者修改脚本中的namespace
+* k8s集群上创建data的命名空间，或者修改脚本中的namespace
 
 ### 创建过程
 1. 首相创建mysql账号
@@ -36,7 +36,7 @@ sh create-master-slave.sh
 * mysql镜像，可以使用docker hub上的官方mysql镜像，或者使用percona-mysql镜像，percona-mysql提供了mysql商业版才有的一些功能
 * percona-xtrabackup镜像，percona-xtraback是一个用于mysql备份的工具，版本必须与mysql版本对齐，否则备份过程中可能会出现问题
 * percona-xtrabackup镜像中必须安装mysql-shell，用于创建集群
-* k8s集成上创建data的命名空间，或者修改脚本中的namespace
+* k8s集群上创建data的命名空间，或者修改脚本中的namespace
 
 ### 创建过程
 1. 首相创建mysql账号
